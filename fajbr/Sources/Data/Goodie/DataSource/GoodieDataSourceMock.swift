@@ -9,7 +9,7 @@ class GoodieDataSourceMock: GoodieDataSource {
     private let defaultGoodies: [Goodie] = [
         .init(id: 1, name: "goodie_broccoli"),
         .init(id: 2, name: "goodie_cabbage"),
-        .init(id: 3, name: "cauliflower"),
+        .init(id: 3, name: "goodie_cauliflower"),
     ]
     
     func goodies() -> [Goodie] {
