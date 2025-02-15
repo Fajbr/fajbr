@@ -25,8 +25,23 @@
 		763D8D4B2D60FA2200DF5ACF /* fajbrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fajbrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		763D8DBB2D611D2C00DF5ACF /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Sources/Core/Protocols/DTO.swift,
+				Sources/Data/Goodie/DataSource/GoodieDataSource.swift,
+				Sources/Data/Goodie/DataSource/GoodieDataSourceMock.swift,
+				Sources/Data/Goodie/DTO/GoodieDTO.swift,
+				Sources/Domain/Goodie/Model/Goodie.swift,
+				Sources/Domain/Goodie/UseCase/GoodieUseCase.swift,
+			);
+			target = 763D8D4A2D60FA2200DF5ACF /* fajbrTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		761756C52D60EE12000C3DE4 /* fajbr */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = fajbr; sourceTree = "<group>"; };
+		761756C52D60EE12000C3DE4 /* fajbr */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (763D8DBB2D611D2C00DF5ACF /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = fajbr; sourceTree = "<group>"; };
 		763D8D4C2D60FA2200DF5ACF /* fajbrTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = fajbrTests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
