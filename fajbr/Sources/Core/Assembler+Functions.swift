@@ -8,10 +8,15 @@ fileprivate let assembler: Assembler = {
     let container = Container()
             
     return Assembler([
-        RemoteDataSourceAssembly(),
+        dataSourceAssembly(),
         UseCaseAssembly(),
     ], container: container)
 }()
+
+func dataSourceAssembly() -> Assembly {
+    // TODO: Split into multiple configurations and use assembly according to the environment
+    return MockDataSourceAssembly()
+}
 
 func inject<Service>(_ serviceType: Service.Type) -> Service {
     return assembler.resolver.resolve(serviceType)!
