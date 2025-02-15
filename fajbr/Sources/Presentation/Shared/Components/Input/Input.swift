@@ -38,12 +38,12 @@ struct Input: View {
         }
     }
     
-    var message: LocalizedStringKey {
+    var message: LocalizedStringKey? {
         switch state {
         case .invalid(let message):
             return message
         default:
-            return ""
+            return nil
         }
     }
     
@@ -66,11 +66,13 @@ struct Input: View {
                     validate(text: current)
                 }
             
-            Text(message)
-                .lineLimit(1, reservesSpace: true)
-                .font(.caption)
-                .foregroundColor(.cardinal)
-                .fixedSize()
+            if let message {
+                Text(message)
+                    .lineLimit(1, reservesSpace: true)
+                    .font(.caption)
+                    .foregroundColor(.cardinal)
+                    .fixedSize()
+            }
         }
         .padding()
         .onAppear {
