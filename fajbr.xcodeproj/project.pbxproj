@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,16 +26,8 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		761756C52D60EE12000C3DE4 /* fajbr */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = fajbr;
-			sourceTree = "<group>";
-		};
-		763D8D4C2D60FA2200DF5ACF /* fajbrTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = fajbrTests;
-			sourceTree = "<group>";
-		};
+		761756C52D60EE12000C3DE4 /* fajbr */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = fajbr; sourceTree = "<group>"; };
+		763D8D4C2D60FA2200DF5ACF /* fajbrTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = fajbrTests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +136,7 @@
 				};
 			};
 			buildConfigurationList = 761756BE2D60EE12000C3DE4 /* Build configuration list for PBXProject "fajbr" */;
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -155,7 +148,6 @@
 			packageReferences = (
 				763D8D012D60F30300DF5ACF /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 761756C42D60EE12000C3DE4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
