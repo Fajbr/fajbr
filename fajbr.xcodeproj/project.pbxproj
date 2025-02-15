@@ -10,14 +10,30 @@
 		763D8D032D60F30300DF5ACF /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 763D8D022D60F30300DF5ACF /* Swinject */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		763D8D4F2D60FA2200DF5ACF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 761756BB2D60EE12000C3DE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 761756C22D60EE12000C3DE4;
+			remoteInfo = fajbr;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		761756C32D60EE12000C3DE4 /* fajbr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fajbr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		763D8D4B2D60FA2200DF5ACF /* fajbrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fajbrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		761756C52D60EE12000C3DE4 /* fajbr */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = fajbr;
+			sourceTree = "<group>";
+		};
+		763D8D4C2D60FA2200DF5ACF /* fajbrTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = fajbrTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -31,6 +47,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		763D8D482D60FA2200DF5ACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				761756C52D60EE12000C3DE4 /* fajbr */,
+				763D8D4C2D60FA2200DF5ACF /* fajbrTests */,
 				761756C42D60EE12000C3DE4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				761756C32D60EE12000C3DE4 /* fajbr.app */,
+				763D8D4B2D60FA2200DF5ACF /* fajbrTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +101,29 @@
 			productReference = 761756C32D60EE12000C3DE4 /* fajbr.app */;
 			productType = "com.apple.product-type.application";
 		};
+		763D8D4A2D60FA2200DF5ACF /* fajbrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 763D8D532D60FA2200DF5ACF /* Build configuration list for PBXNativeTarget "fajbrTests" */;
+			buildPhases = (
+				763D8D472D60FA2200DF5ACF /* Sources */,
+				763D8D482D60FA2200DF5ACF /* Frameworks */,
+				763D8D492D60FA2200DF5ACF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				763D8D502D60FA2200DF5ACF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				763D8D4C2D60FA2200DF5ACF /* fajbrTests */,
+			);
+			name = fajbrTests;
+			packageProductDependencies = (
+			);
+			productName = fajbrTests;
+			productReference = 763D8D4B2D60FA2200DF5ACF /* fajbrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -88,6 +136,10 @@
 				TargetAttributes = {
 					761756C22D60EE12000C3DE4 = {
 						CreatedOnToolsVersion = 16.1;
+					};
+					763D8D4A2D60FA2200DF5ACF = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 761756C22D60EE12000C3DE4;
 					};
 				};
 			};
@@ -109,12 +161,20 @@
 			projectRoot = "";
 			targets = (
 				761756C22D60EE12000C3DE4 /* fajbr */,
+				763D8D4A2D60FA2200DF5ACF /* fajbrTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		761756C12D60EE12000C3DE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		763D8D492D60FA2200DF5ACF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -131,7 +191,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		763D8D472D60FA2200DF5ACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		763D8D502D60FA2200DF5ACF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 761756C22D60EE12000C3DE4 /* fajbr */;
+			targetProxy = 763D8D4F2D60FA2200DF5ACF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		761756CF2D60EE13000C3DE4 /* Debug */ = {
@@ -323,6 +398,42 @@
 			};
 			name = Release;
 		};
+		763D8D512D60FA2200DF5ACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7CWQ952KF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.gabzdyldaniel.fajbrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fajbr.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fajbr";
+			};
+			name = Debug;
+		};
+		763D8D522D60FA2200DF5ACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7CWQ952KF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.gabzdyldaniel.fajbrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fajbr.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fajbr";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -340,6 +451,15 @@
 			buildConfigurations = (
 				761756D22D60EE13000C3DE4 /* Debug */,
 				761756D32D60EE13000C3DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		763D8D532D60FA2200DF5ACF /* Build configuration list for PBXNativeTarget "fajbrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				763D8D512D60FA2200DF5ACF /* Debug */,
+				763D8D522D60FA2200DF5ACF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
