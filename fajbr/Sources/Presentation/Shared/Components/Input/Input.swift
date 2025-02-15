@@ -16,7 +16,7 @@ struct Input: View {
     // MARK: - Input
     
     @Binding var text: String
-    let placeholder: String = ""
+    let placeholder: LocalizedStringKey?
     let validation: Validation?
     
     
@@ -52,7 +52,7 @@ struct Input: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            TextField(placeholder, text: $text)
+            TextField(placeholder ?? "", text: $text)
                 .autocorrectionDisabled()
                 .textInputAutocapitalization(.never)
                 .padding()
@@ -99,18 +99,38 @@ struct Input: View {
 }
 
 
+#Preview("Empty", traits: .sizeThatFitsLayout) {
+    Input(
+        text: .constant(""),
+        placeholder: "preview_your_favorite_vegetable",
+        validation: nil
+    )
+}
+
 #Preview("No Validation", traits: .sizeThatFitsLayout) {
-    Input(text: .constant("🥕 Carrot"), validation: nil)
+    Input(
+        text: .constant("🥕 Carrot"),
+        placeholder: "",
+        validation: nil
+    )
 }
 
 #Preview("Valid", traits: .sizeThatFitsLayout) {
-    Input(text: .constant("🥬 Cabbage"), validation: Validation { _ in
-        return nil
-    })
+    Input(
+        text: .constant("🥬 Cabbage"),
+        placeholder: "",
+        validation: Validation { _ in
+            return nil
+        }
+    )
 }
 
 #Preview("Invalid", traits: .sizeThatFitsLayout) {
-    Input(text: .constant("🍩 Sugar"), validation: Validation { _ in
-        return .forMessage("preview_sugar_does_not_contain_fiber")
-    })
+    Input(
+        text: .constant("🍩 Sugar"),
+        placeholder: "",
+        validation: Validation { _ in
+            return .forMessage("preview_sugar_does_not_contain_fiber")
+        }
+    )
 }
