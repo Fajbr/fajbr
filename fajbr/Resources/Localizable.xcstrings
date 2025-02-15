@@ -1,7 +1,21 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Hello, Fajbr!" : {
+    "" : {
+
+    },
+    "preview_sugar_does_not_contain_fiber" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sugar does not contain fiber. Try something else."
+          }
+        }
+      }
+    },
+    "Username is required" : {
 
     }
   },
