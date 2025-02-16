@@ -24,7 +24,7 @@ struct ProgressBar: View {
             case .small:
                 return 5
             case .medium:
-                return 10
+                return 7.5
             }
         }
     }
