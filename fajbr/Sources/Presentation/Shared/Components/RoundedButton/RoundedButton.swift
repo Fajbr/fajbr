@@ -21,7 +21,6 @@ struct RoundedButton: View {
         } label: {
             RoundedRectangle(cornerRadius: 4, style: .continuous)
                 .fill(fillColor)
-                .padding(.horizontal)
                 .overlay {
                     Text(title)
                         .foregroundColor(.white)
@@ -36,11 +35,14 @@ struct RoundedButton: View {
 #Preview(traits: .sizeThatFitsLayout) {
     Group {
         RoundedButton(title: "submit", fillColor: .beetle) { }
+            .padding(.horizontal)
         
         HStack(spacing: 0) {
             RoundedButton(title: "confirm", fillColor: .featherGreen) { }
+                .padding(.horizontal)
             
             RoundedButton(title: "reject", fillColor: .cardinal) { }
+                .padding(.horizontal)
         }
     }
     .padding(.vertical)
