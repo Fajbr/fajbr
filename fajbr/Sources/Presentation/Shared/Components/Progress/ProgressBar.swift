@@ -79,7 +79,7 @@ struct ProgressBar: View {
                 
                 Rectangle()
                     .fill(.featherGreen)
-                    .frame(width: max(0, geometry.size.width * progress), height: size.height)
+                    .frame(width: max(0, min(geometry.size.width * progress, geometry.size.width)), height: size.height)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                     .overlay(
                         VStack {
@@ -127,6 +127,8 @@ struct ProgressBar: View {
         ProgressBar(current: 15, total: 30, size: .small, colorway: .success)
         ProgressBar(current: 18, total: 30, size: .small, colorway: .success)
         ProgressBar(current: 0, total: 30, size: .small, colorway: .success)
+        
+        ProgressBar(current: 50, total: 30, size: .small, colorway: .success)
         
         ProgressBar(current: 30, total: 30, size: .small, colorway: .success)
             .padding(.bottom)
