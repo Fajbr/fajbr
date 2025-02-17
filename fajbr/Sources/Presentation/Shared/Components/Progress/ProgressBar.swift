@@ -101,6 +101,7 @@ struct ProgressBar: View {
                         .font(.caption)
                         .bold()
                         .foregroundColor(.white)
+                        .stroke(color: colorway.maskColor, width: 0.5)
                     
                     Spacer()
                 }
